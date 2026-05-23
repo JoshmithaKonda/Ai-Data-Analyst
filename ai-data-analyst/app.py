@@ -4,9 +4,6 @@ from modules.visualizer import generate_charts
 from modules.insights import generate_insights
 from modules.chat import generate_reasoning, chat_with_data
 
-st.write("Key loaded:", "OPENAI_API_KEY" in st.secrets)
-st.write("Key prefix:", st.secrets["OPENAI_API_KEY"][:8])
-st.write("Key length:", len(st.secrets["OPENAI_API_KEY"]))
 
 st.set_page_config(page_title="InsightAI", layout="wide")
 
